@@ -9,6 +9,12 @@
     font-weight: normal;
 }
 
+@font-face {
+    font-family:'Akira';
+    src: url(../Fonts/Akira\ Expanded\ Demo.otf) format('opentype');
+    font-weight: normal;
+}
+
 :root {
     --cor0: #3e4041;
     --cor1: #26ABBD;
@@ -19,14 +25,52 @@
 
     --font-padrao: Ariel, Verdana, Helvetica, Sans-serif;
     --font-lato: 'lato','cursive';
+    --font-Akira:'Akira'
     
 }
 
-h1 {
-    font-family: var(--font-lato);
-    font-weight: 900;
+body {
+    background-color: black;
+    height: 100vw;
+    width: 100vh;
 }
 
+header {
+    background-image: radial-gradient(circle, rgba(167, 167, 167, 0.43), #2d1244);
+    color: white;
+    text-align: center;
+    height: 30vw;
+    width: auto;
+    margin: 30px 80px;
+    padding:40px ;
 
+}
+
+h1 ,h2 {
+    margin-top: 40px;
+    text-align:left;
+    font-family: var(--font-Akira);
+    font-size: 70px;
+    display: block;
+}
+
+h1{
+    line-height: 52px;
+}
+
+h2 {
+    margin-bottom: calc(-40px);
+    font-family: var(--font-Akira);
+    font-size: 18px;
+    text-align:left;
+}
+
+p {
+    font-family: var(--font-lato);
+    text-align: right;
+    padding-right: 131px;
+    margin-top: calc(-45px);
+    
+}
 
     
