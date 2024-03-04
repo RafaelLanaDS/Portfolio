@@ -15,6 +15,13 @@
     font-weight: normal;
 }
 
+@font-face {
+    font-family:'Designer';
+    src: url(../Fonts/Designer\ Expanded\ Demo.otf) format('opentype');
+    font-weight: normal;
+}
+
+
 :root {
     --cor0: #3e4041;
     --cor1: #26ABBD;
@@ -25,52 +32,65 @@
 
     --font-padrao: Ariel, Verdana, Helvetica, Sans-serif;
     --font-lato: 'lato','cursive';
-    --font-Akira:'Akira'
+    --font-Akira:'Akira';
+    --font-Designer:'Designer';
     
 }
 
 body {
-    background-color: black;
+    background-image: radial-gradient(circle, rgba(96, 79, 99, 0.43), #1d0830);
     height: 100vw;
     width: 100vh;
+    
 }
 
+.interface {
+    position: absolute; top: 30%; left: 50%; transform: translate(-55%, -50%); 
+} 
+
 header {
-    background-image: radial-gradient(circle, rgba(167, 167, 167, 0.43), #2d1244);
-    color: white;
-    text-align: center;
-    height: 30vw;
-    width: auto;
+    color: rgb(244, 244, 244);
     margin: 30px 80px;
     padding:40px ;
-
+    display: block;
 }
 
 h1 ,h2 {
     margin-top: 40px;
     text-align:left;
     font-family: var(--font-Akira);
-    font-size: 70px;
+    font-size: 120px;
     display: block;
 }
 
 h1{
-    line-height: 52px;
+    line-height: 85px;
 }
 
 h2 {
-    margin-bottom: calc(-40px);
+    margin-bottom: calc(-41px);
     font-family: var(--font-Akira);
-    font-size: 18px;
+    font-size: 27px;
     text-align:left;
 }
 
 p {
+    font-size: 20px;
     font-family: var(--font-lato);
     text-align: right;
-    padding-right: 131px;
-    margin-top: calc(-45px);
-    
+    margin-top: calc(-79px);
 }
 
-    
+#link {
+    position: absolute; top: 27%; left: 67%; transform: translate(-74%, -45%); 
+}
+
+img {
+    width: 40px ;
+    height:40px ;
+}
+ li, a {
+    padding: 7px;
+    display: inline-block;
+    list-style-type: none;
+ }

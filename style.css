@@ -1,0 +1,50 @@
+@charset "UTF-8";
+
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap ');
+
+
+@font-face {
+    font-family:'lato';
+    src: url(../Fonts/Lato-Black.ttf) format('opentype');
+    font-weight: normal;
+}
+
+@font-face {
+    font-family:'Akira';
+    src: url(../Fonts/Akira\ Expanded\ Demo.otf) format('opentype');
+    font-weight: normal;
+}
+
+:root {
+    --cor0: #3e4041;
+    --cor1: #26ABBD;
+    --cor2: #37808A;
+    --cor3: #8000F0;
+    --cor4: #7626BD;
+    --cor5: #63378A;
+
+    --font-padrao: Ariel, Verdana, Helvetica, Sans-serif;
+    --font-lato: 'lato','cursive';
+    --font-Akira:'Akira'
+    
+}
+
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+body {
+    height: 100vw;
+    width: 100vh;
+    background-image: radial-gradient(circle, rgba(167, 167, 167, 0.43), #2d1244);
+}
+
+.interface {
+    position: absolute; top: 30%; left: 50%; transform: translate(-50%, -50%); 
+}
+
+h1 , h2 {
+    font-size: 80px;
+    font-family: var(--font-Akira);
+}
