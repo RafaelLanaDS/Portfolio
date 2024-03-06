@@ -110,6 +110,12 @@ img {
     transform: translate(-3px, -3px);
     transition: trasform .3s, border 1s;
  }
- .article {
-    color: white;
+
+ .projetos {
+    background-color: white;
  }
+
+#projeto{
+    color: wheat;
+    font-size: 30px;
+}
