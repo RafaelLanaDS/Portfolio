@@ -173,7 +173,7 @@
     gap: 1.5rem;
   }
   .social-icon-btn {
-    width: 96px;
+    width: 35px;
   }
   .social-icon-btn img {
     width: 25px;
@@ -191,6 +191,9 @@
 @media (max-width: 375px) {
   .hero-title-purple {
     font-size: 4rem;
+  }
+  .social-icon-btn {
+      width: 26px;
   }
 }
 
