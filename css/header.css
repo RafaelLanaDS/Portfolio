@@ -167,17 +167,21 @@
     font-size: 18px;
   }
   .hero-title-white {
-    font-size: 2.5rem;
+    font-size: 2.3rem;
   }
-  .hero-headline-row{
-    gap: 1.5rem;
+  .hero-headline-row {
+    gap: 0.8rem;
+    flex-wrap: nowrap;
+  }
+  .hero-social-icons {
+    gap: 0.35rem;
   }
   .social-icon-btn {
-    width: 35px;
+    width: auto;
   }
   .social-icon-btn img {
-    width: 25px;
-    height: 25px;
+    width: 20px;
+    height: 20px;
   }
   .hero-title-purple {
     font-size: 4.5rem;
@@ -192,8 +196,15 @@
   .hero-title-purple {
     font-size: 4rem;
   }
-  .social-icon-btn {
-      width: 26px;
+  .hero-headline-row {
+    gap: 0.6rem;
+  }
+  .hero-social-icons {
+    gap: 0.3rem;
+  }
+  .social-icon-btn img {
+    width: 18px;
+    height: 18px;
   }
 }
 
@@ -204,9 +215,15 @@
   .hero-title-purple {
     font-size: 3.3rem;
   }
+  .hero-headline-row {
+    gap: 0.5rem;
+  }
+  .hero-social-icons {
+    gap: 0.25rem;
+  }
   .social-icon-btn img {
-    width: 21px;
-    height: 20px;
+    width: 16px;
+    height: 16px;
   }
   .hero-desc {
         font-size: 11px;
