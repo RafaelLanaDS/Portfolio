@@ -1,0 +1,128 @@
+
+  #credenciais {
+    background: #0d0d0d;
+    padding: 100px 40px;
+  }
+ 
+  .cred-header {
+    text-align: center;
+    margin-bottom: 64px;
+  }
+ 
+  .cred-title {
+    font-size: clamp(36px, 6vw, 56px);
+    font-weight: 800;
+    color: #e0e0e0;
+    margin: 0 0 10px;
+    letter-spacing: -1px;
+  }
+ 
+  .cred-title span { color: #8b5cf6; }
+ 
+  .cred-subtitle {
+    font-size: 15px;
+    color: #555;
+    margin: 0;
+  }
+ 
+  .cred-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(360px, 1fr));
+    gap: 20px;
+    max-width: 1600px;
+    margin: 0 auto;
+  }
+ 
+  .cred-card {
+    background: #161616;
+    border: 1px solid #2a2a2a;
+    border-radius: 16px;
+    padding: 24px 20px;
+    position: relative;
+    overflow: hidden;
+    transition: border-color 0.3s ease, transform 0.3s ease;
+  }
+ 
+  .cred-card::before {
+    content: '';
+    position: absolute;
+    top: 0; left: 0; right: 0;
+    height: 2px;
+    background: linear-gradient(90deg, #7c3aed, #a855f7, #7c3aed);
+    opacity: 0;
+    transition: opacity 0.3s ease;
+  }
+ 
+  .cred-card:hover { border-color: #4c1d95; transform: translateY(-5px); }
+  .cred-card:hover::before { opacity: 1; }
+ 
+  .cred-logo {
+    width: 46px;
+    height: 46px;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 13px;
+    font-weight: 800;
+    font-family: 'Syne', sans-serif;
+    margin-bottom: 16px;
+    background: #0d1a0d;
+    color: #22c55e;
+    border: 1px solid #1a2e1a;
+  }
+ 
+  .cred-issuer {
+    font-size: 11px;
+    text-transform: uppercase;
+    letter-spacing: 1.5px;
+    color: #555;
+    margin: 0 0 6px;
+  }
+ 
+  .cred-name {
+    font-family: 'Syne', sans-serif;
+    font-size: 15px;
+    font-weight: 700;
+    color: #e0e0e0;
+    margin: 0 0 14px;
+    line-height: 1.35;
+  }
+ 
+  .cred-tags {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 6px;
+    margin-bottom: 14px;
+  }
+ 
+  .cred-tag {
+    font-size: 10px;
+    padding: 3px 9px;
+    border-radius: 20px;
+    background: #1e1e1e;
+    color: #777;
+    border: 1px solid #2a2a2a;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+  }
+ 
+  .cred-footer {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-top: 1px solid #1e1e1e;
+    padding-top: 12px;
+  }
+ 
+  .cred-date { font-size: 12px; color: #444; }
+ 
+  .cred-badge {
+    font-size: 11px;
+    padding: 4px 10px;
+    border-radius: 20px;
+    background: rgba(139, 92, 246, 0.1);
+    color: #8b5cf6;
+    border: 1px solid rgba(139, 92, 246, 0.25);
+    font-weight: 500;
+  }

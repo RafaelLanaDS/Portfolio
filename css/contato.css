@@ -1,0 +1,231 @@
+  @import url('https://fonts.googleapis.com/css2?family=Syne:wght@400;700;800&family=DM+Sans:wght@400;500&display=swap');
+ 
+  /* ---- CONTATO ---- */
+  #contato {
+    background: #0a0a0a;
+    padding: 200px 136px;
+    font-family: 'DM Sans', sans-serif;
+  }
+ 
+  .contato-inner {
+    display: grid;
+    grid-template-columns: 1fr 1.4fr;
+    gap: 80px;
+    max-width: 1800px;
+    margin: 0 auto;
+    align-items: start;
+  }
+ 
+  /* Coluna esquerda */
+  .contato-info-label {
+    font-size: 11px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    color: #8b5cf6;
+    font-weight: 600;
+    margin: 0 0 14px;
+  }
+ 
+  .contato-info-title {
+    font-family: 'Syne', sans-serif;
+    font-size: clamp(40px, 5vw, 60px);
+    font-weight: 800;
+    color: #f0f0f0;
+    margin: 0 0 20px;
+    line-height: 1.1;
+  }
+ 
+  .contato-info-desc {
+    font-size: 15px;
+    color: #555;
+    line-height: 1.7;
+    margin: 0 0 40px;
+    max-width: 320px;
+  }
+ 
+  .contato-item {
+    display: flex;
+    align-items: center;
+    gap: 14px;
+    margin-bottom: 18px;
+  }
+ 
+  .contato-icon {
+    width: 40px;
+    height: 40px;
+    border-radius: 10px;
+    background: #161616;
+    border: 1px solid #2a2a2a;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-shrink: 0;
+  }
+ 
+  .contato-icon svg {
+    width: 17px;
+    height: 17px;
+    stroke: #8b5cf6;
+    fill: none;
+    stroke-width: 1.8;
+    stroke-linecap: round;
+    stroke-linejoin: round;
+  }
+ 
+  .contato-item-text {
+    font-size: 14px;
+    color: #999;
+  }
+ 
+  /* Coluna direita — card do formulário */
+  .contato-form-card {
+    background: #111;
+    border: 1px solid #222;
+    border-radius: 20px;
+    padding: 40px 36px;
+  }
+ 
+  .form-row {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 16px;
+    margin-bottom: 16px;
+  }
+ 
+  .form-group {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+  }
+ 
+  .form-group.full {
+    margin-bottom: 16px;
+  }
+ 
+  .form-label {
+    font-size: 13px;
+    color: #888;
+    font-weight: 500;
+  }
+ 
+  .form-input,
+  .form-textarea {
+    background: #0d0d0d;
+    border: 1px solid #2a2a2a;
+    border-radius: 10px;
+    padding: 13px 16px;
+    font-size: 14px;
+    color: #e0e0e0;
+    font-family: 'DM Sans', sans-serif;
+    width: 100%;
+    box-sizing: border-box;
+    transition: border-color 0.2s;
+    outline: none;
+  }
+ 
+  .form-input::placeholder,
+  .form-textarea::placeholder {
+    color: #3a3a3a;
+  }
+ 
+  .form-input:focus,
+  .form-textarea:focus {
+    border-color: #7c3aed;
+  }
+ 
+  .form-textarea {
+    resize: none;
+    height: 130px;
+  }
+ 
+  .form-btn {
+    width: 100%;
+    padding: 15px;
+    background: #7c3aed;
+    color: #fff;
+    font-family: 'Syne', sans-serif;
+    font-size: 15px;
+    font-weight: 700;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: background 0.2s, transform 0.15s;
+    margin-top: 8px;
+  }
+ 
+  .form-btn:hover {
+    background: #6d28d9;
+    transform: translateY(-2px);
+  }
+ 
+  .form-btn:active {
+    transform: translateY(0);
+  }
+ 
+  /* ---- FOOTER ---- */
+  footer {
+    background: #080808;
+    border-top: 1px solid #181818;
+    padding: 28px 136px;
+    font-family: 'DM Sans', sans-serif;
+  }
+ 
+  .footer-inner {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    max-width: 1800px;
+    margin: 0 auto;
+    flex-wrap: wrap;
+    gap: 16px;
+  }
+ 
+  .footer-brand {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    text-decoration: none;
+  }
+ 
+  .footer-logo svg {
+    width: 22px;
+    height: 22px;
+    fill: #8b5cf6;
+  }
+ 
+  .footer-brand-name {
+    font-family: 'Syne', sans-serif;
+    font-size: 14px;
+    font-weight: 700;
+    color: #8b5cf6;
+  }
+ 
+  .footer-copy {
+    font-size: 13px;
+    color: #444;
+  }
+ 
+  .footer-links {
+    display: flex;
+    gap: 24px;
+  }
+ 
+  .footer-links a {
+    font-size: 13px;
+    color: #555;
+    text-decoration: none;
+    transition: color 0.2s;
+  }
+ 
+  .footer-links a:hover {
+    color: #8b5cf6;
+  }
+ 
+  /* Responsivo */
+  @media (max-width: 768px) {
+    #contato { padding: 60px 24px; }
+    .contato-inner { grid-template-columns: 1fr; gap: 48px; }
+    .form-row { grid-template-columns: 1fr; }
+    footer { padding: 28px 24px; }
+    .footer-inner { flex-direction: column; align-items: center; text-align: center; }
+  }
