@@ -43,10 +43,14 @@
 
                 <!-- Social Icons -->
                 <div class="hero-social-icons">
-                    <a href="#" class="social-icon-btn" title="Portfolio">
-                        <img src="img/github.png" alt="Portfolio Icon" class="social-icon">
-                        <img src="img/linkdlen.png" alt="Portfolio Icon" class="social-icon">
-                        <img src="img/instagram.png" alt="Portfolio Icon" class="social-icon">
+                    <a href="https://github.com/rafaellanads" class="social-icon-btn" title="GitHub" target="_blank" rel="noreferrer">
+                        <img src="img/github.png" alt="GitHub" class="social-icon">
+                    </a>
+                    <a href="https://www.linkedin.com/in/lanarafael/" class="social-icon-btn" title="LinkedIn" target="_blank" rel="noreferrer">
+                        <img src="img/linkdlen.png" alt="LinkedIn" class="social-icon">
+                    </a>
+                    <a href="https://www.instagram.com/rafael.lanas/" class="social-icon-btn" title="Instagram" target="_blank" rel="noreferrer">
+                        <img src="img/instagram.png" alt="Instagram" class="social-icon">
                     </a>
                 </div>
             </div>
@@ -192,22 +196,26 @@
 
                 <div class="comp-bloco">
                     <div class="name-linguagen">HTML/CSS</div>
-                    <p>Criação de interfaces semânticas, responsivas e acessíveis. Domínio de Flexbox, Grid, animações CSS e boas práticas de estruturação de código.</p>
+                    <p>HTML/CSS
+                    Criação de interfaces semânticas, responsivas e acessíveis com HTML5 e CSS3. Domínio de Flexbox e CSS Grid para layouts modernos, e Media Queries com abordagem mobile-first para adaptação em qualquer dispositivo. Uso de Bootstrap para desenvolvimento ágil com sistema de grid e componentes prontos. Experiência prática no estágio na DevRocket, desenvolvendo temas de e-commerce do zero para as plataformas Tray e Bagy, com banners em grid e layouts personalizados. Uso de variáveis CSS para padronização de cores e tipografia, facilitando manutenção do código. Animações CSS, transições e hover effects para enriquecer a experiência do usuário. Boas práticas de organização de pastas e separação de responsabilidades entre estrutura e estilo.</p>
                 </div>
 
                 <div class="comp-bloco">
                     <div class="name-linguagen">JavaScript</div>
-                    <p>Desenvolvimento de interfaces dinâmicas e interativas no front-end, além de APIs e aplicações server-side com Node.js e seus ecossistemas.</p>
+                    <p>JavaScript
+                    Desenvolvimento de interfaces dinâmicas e interativas com JavaScript puro, manipulando o DOM para criação de comportamentos em tempo real. Aplicação de lógica de programação em temas de e-commerce na Tray, controlando exibição de produtos e eventos do usuário. Uso de JavaScript junto ao Twig para renderização condicional de conteúdo e integração com Swiper.js para carrosséis responsivos. Consumo de APIs RESTful durante o estágio na DevRocket, realizando requisições à API da Tray e manipulando respostas. Conhecimento em estruturas de controle, funções, arrays e manipulação de objetos. Introdução a frameworks modernos com Vue.js, explorando componentes reativos e reatividade de dados. Versionamento de código com Git e GitHub ao longo de todos os projetos desenvolvidos.</p>
                 </div>
 
                 <div class="comp-bloco">
                     <div class="name-linguagen">PHP</div>
-                    <p>Desenvolvimento back-end com PHP e framework CodeIgniter nas versões 3 e 4. Criação de sistemas MVC, rotas, models, controllers e integração com banco de dados.</p>
+                    <p>PHP
+                    Introdução ao desenvolvimento back-end com PHP moderno, com foco em lógica de programação, funções e manipulação de dados. Aplicação do framework CodeIgniter no padrão MVC, compreendendo a separação entre Models, Views e Controllers. Criação de rotas, controllers e models para gerenciamento do fluxo de dados da aplicação. Desenvolvimento de um projeto do zero integrando front-end com HTML, CSS e Bootstrap ao back-end em PHP. Operações CRUD completas conectando o sistema ao banco de dados MySQL. Compreensão do ciclo de requisição e resposta HTTP, trabalhando com formulários, validações e retorno de dados. Aprendizado aprofundado através do curso PHP Moderno, reforçando boas práticas de desenvolvimento web.</p>
                 </div>
 
                 <div class="comp-bloco">
                     <div class="name-linguagen">MySql</div>
-                    <p>Design e implementação de bancos de dados relacionais com MySQL. Criação de tabelas, consultas SQL e otimização de desempenho.</p>
+                    <p>MySQL
+                    Design e implementação de bancos de dados relacionais com MySQL, criando tabelas com chaves primárias, estrangeiras e relacionamentos entre entidades. Escrita de consultas SQL com SELECT, WHERE, ORDER BY e GROUP BY para filtragem e organização de dados. Operações CRUD completas — INSERT, SELECT, UPDATE e DELETE — integradas ao back-end via CodeIgniter. Compreensão do modelo relacional e normalização básica de tabelas para evitar redundância. Experiência prática integrando banco de dados ao front-end pelo padrão MVC, garantindo consistência na exibição e manipulação dos dados. Uso do MySQL Workbench para visualização e gerenciamento da estrutura do banco durante o desenvolvimento. Aprendizado aplicado em projetos reais, reforçando a importância da integridade dos dados em sistemas web.</p>
                 </div>
 
             </div>
@@ -374,23 +382,23 @@
 
             <!-- Coluna direita: formulário -->
             <div class="contato-form-card">
-                <div class="form-row">
+                <form id="contato-form">
+                    <div class="form-row">
                     <div class="form-group">
                         <label class="form-label">Nome</label>
-                        <input class="form-input" type="text" placeholder="Seu nome completo" />
+                        <input id="nome" class="form-input" type="text" placeholder="Seu nome completo" required />
                     </div>
                     <div class="form-group">
                         <label class="form-label">Email</label>
-                        <input class="form-input" type="email" placeholder="seu@email.com" />
+                        <input id="email" class="form-input" type="email" placeholder="seu@email.com" required />
                     </div>
-                </div>
-
-                <div class="form-group full">
+                    </div>
+                    <div class="form-group full">
                     <label class="form-label">Mensagem</label>
-                    <textarea class="form-textarea" placeholder="Como posso ajudar?"></textarea>
-                </div>
-
-                <button class="form-btn">Enviar Mensagem</button>
+                    <textarea id="mensagem" class="form-textarea" placeholder="Como posso ajudar?" required></textarea>
+                    </div>
+                    <button type="submit" class="form-btn">Enviar Mensagem</button>
+                </form>
             </div>
 
         </div>
@@ -422,9 +430,12 @@
         </div>
     </footer>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
 
     <script src="js/projetos.js"></script>
     <script src="js/nav.js"></script>
+    <script src="js/contato.js"></script>
+
 </body>
 
 </html>

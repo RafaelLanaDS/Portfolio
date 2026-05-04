@@ -127,14 +127,3 @@
     font-weight: 500;
   }
 
-@media (max-width: 375px) {
-  .cred-grid {
-  grid-template-columns: repeat(auto-fit, minmax(295px, 1fr));
-  }
-}
-
-@media (max-width: 335px) {
-  .cred-grid {
-  grid-template-columns: repeat(auto-fit, minmax(235px, 1fr));
-  }
-}

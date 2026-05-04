@@ -97,19 +97,20 @@
 }
 
 .social-icon-btn {
-  width: 156px;
+  width: auto;
   background: transparent;
   border: none;
   display: inline-flex;
   align-items: center;
-  justify-content: space-between;
+  justify-content: center;
   padding: 0;
   text-decoration: none;
+  gap: 1.5rem;
 }
 
 .social-icon-btn img {
-  width: 40px;
-  height: 40px;
+  width: 55px;
+  height: 50px;
   object-fit: contain;
   display: block;
 }
@@ -185,4 +186,26 @@
   .hero-desc {
     font-size: 15px;
   }
+}
+
+@media (max-width: 375px) {
+  .hero-title-purple {
+    font-size: 4rem;
+  }
+}
+
+@media (max-width: 320px) {
+  .hero-title-white {
+    font-size: 2rem;
+  }
+  .hero-title-purple {
+    font-size: 3.3rem;
+  }
+  .social-icon-btn img {
+    width: 21px;
+    height: 20px;
+  }
+  .hero-desc {
+        font-size: 11px;
+    }
 }
