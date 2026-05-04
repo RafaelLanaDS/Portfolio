@@ -161,12 +161,16 @@
 }
 
 @media (max-width: 768px) {
+
+  .projetos-titulo {
+    font-size: clamp(2.5rem, 10vw, 5rem);
+  }
   .projetos-colunas {
     flex-direction: column;
     align-items: center;
   }
 
   .projeto-item .projeto-img {
-    max-width: 320px;
+    max-width: 470px;
   }
 }

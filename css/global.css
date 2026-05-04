@@ -26,9 +26,14 @@
   --radius-pill: 20px;
 }
 
-html, body {
+html {
   overflow-x: hidden;
 }
+
+body {
+  /* não coloca overflow aqui */
+}
+
 .section-fullscreen {
   position: relative;
   overflow: hidden;
