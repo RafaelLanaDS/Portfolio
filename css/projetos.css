@@ -136,6 +136,7 @@
   display: block;
   /* leve sombra roxa no card central */
   transition: filter 0.55s ease;
+  padding-bottom: 3rem;
 }
 
 .carousel-card--center .carousel-card__img {
