@@ -66,124 +66,123 @@
     </section>
     <section id="projetos" class="projetos">
         <img src="img/degrade-fundo-1.png" alt="" class="fundo-img">
-
+        
         <div class="projetos-wrapper">
-
-            <!-- Título no topo, largura total -->
+        
             <h2 class="projetos-titulo">Projetos</h2>
-
-            <!-- Linha das imagens + descrições abaixo -->
-            <div class="projetos-colunas">
-
-                <!-- Esquerda -->
-                <div class="projeto-item">
-                    <img src="img/mockup -transparente-kingburguer.png" alt="Projeto 1" class="projeto-img">
-                    <div class="descricao">
-                        <h3>King Burguer</h3>
-                        <div class="techs">
-                            <span>HTML</span><span>CSS</span><span>JS</span>
-                        </div>
-                        <p>Landing page responsiva de hamburgueria com carrossel, animações e múltiplas seções promocionais</p>
-                        <a href="https://rafaellanads.github.io/KingBurguer/" target="_blank" class="btn-projeto">
-                            <img src="img/github.png" alt="GitHub">
-                            Projeto
-                        </a>
-                    </div>
+        
+            <!-- CARROSSEL -->
+            <div class="carousel-container" aria-label="Carrossel de projetos">
+        
+            <button class="carousel-arrow carousel-arrow--left" id="arrowLeft" aria-label="Projeto anterior">
+                <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24"
+                fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+                <polyline points="15 18 9 12 15 6"></polyline>
+                </svg>
+            </button>
+        
+            <div class="carousel-track" id="carouselTrack">
+        
+                <!-- CARD 1 -->
+                <div class="carousel-card" data-index="0">
+                <div class="carousel-card__img-wrap">
+                    <img src="img/mockup -transparente-kingburguer.png" alt="King Burguer" class="carousel-card__img">
                 </div>
-
-                <!-- Direita -->
-                <div class="projeto-item">
-                    <img src="img/mockup -transparente-viagens.png" alt="Projeto 2" class="projeto-img">
-                    <div class="descricao">
-                        <h3>Jornada Viagens</h3>
-                        <div class="techs">
-                            <span>HTML</span><span>CSS</span>
-                        </div>
-                        <p>Landing page de agência de viagens com design moderno, seções de destinos e formulário de contato</p>
-                        <p>
-                            <a href="https://rafaellanads.github.io/Alura.js/SiteJornadaViagens/" target="_blank" class="btn-projeto">
-                                <img src="img/github.png" alt="GitHub">
-                                Projeto
-                            </a>
+                <div class="carousel-card__info">
+                    <h3 class="carousel-card__title">King Burguer</h3>
+                    <div class="techs carousel-card__techs">
+                    <span>HTML</span><span>CSS</span><span>JS</span>
                     </div>
+                    <p class="carousel-card__desc">Landing page responsiva de hamburgueria com carrossel, animações e múltiplas seções promocionais</p>
+                    <a href="https://rafaellanads.github.io/KingBurguer/" target="_blank" class="btn-projeto">
+                    <img src="img/github.png" alt="GitHub"> Projeto
+                    </a>
                 </div>
-
-            </div>
-            <div class="projetos-colunas">
-
-                <!-- Esquerda -->
-                <div class="projeto-item">
-                    <img src="img/mockup -transparente.png" alt="Projeto 1" class="projeto-img">
-                    <div class="descricao">
-                        <h3>King Burguer</h3>
-                        <div class="techs">
-                            <span>HTML</span><span>CSS</span><span>JS</span>
-                        </div>
-                        <p>Landing page de hamburgueria desenvolvida com</p>
-                        <a href="https://rafaellanads.github.io/KingBurguer/" target="_blank" class="btn-projeto">
-                            <img src="img/github.png" alt="GitHub">
-                            Projeto
-                        </a>
+                </div>
+        
+                <!-- CARD 2 -->
+                <div class="carousel-card" data-index="1">
+                <div class="carousel-card__img-wrap">
+                    <img src="img/mockup -transparente-viagens.png" alt="Jornada Viagens" class="carousel-card__img">
+                </div>
+                <div class="carousel-card__info">
+                    <h3 class="carousel-card__title">Jornada Viagens</h3>
+                    <div class="techs carousel-card__techs">
+                    <span>HTML</span><span>CSS</span>
                     </div>
+                    <p class="carousel-card__desc">Landing page de agência de viagens com design moderno, seções de destinos e formulário de contato</p>
+                    <a href="https://rafaellanads.github.io/Alura.js/SiteJornadaViagens/" target="_blank" class="btn-projeto">
+                    <img src="img/github.png" alt="GitHub"> Projeto
+                    </a>
                 </div>
-
-                <!-- Direita -->
-                <div class="projeto-item">
-                    <img src="img/mockup -transparente.png" alt="Projeto 2" class="projeto-img">
-                    <div class="descricao">
-                        <h3>Ecommerce</h3>
-                        <div class="techs">
-                            <span>React</span><span>Node</span><span>CSS</span>
-                        </div>
-                        <p>Loja virtual com listagem de produtos e carrinho
-                        <p>
-                            <a href="https://rafaellanads.github.io/KingBurguer/" target="_blank" class="btn-projeto">
-                                <img src="img/github.png" alt="GitHub">
-                                Projeto
-                            </a>
+                </div>
+        
+                <!-- CARD 3 -->
+                <div class="carousel-card" data-index="2">
+                <div class="carousel-card__img-wrap">
+                    <img src="img/mockup -transparente.png" alt="Ecommerce" class="carousel-card__img">
+                </div>
+                <div class="carousel-card__info">
+                    <h3 class="carousel-card__title">Ecommerce</h3>
+                    <div class="techs carousel-card__techs">
+                    <span>React</span><span>Node</span><span>CSS</span>
                     </div>
+                    <p class="carousel-card__desc">Loja virtual com listagem de produtos e carrinho de compras</p>
+                    <a href="https://rafaellanads.github.io/KingBurguer/" target="_blank" class="btn-projeto">
+                    <img src="img/github.png" alt="GitHub"> Projeto
+                    </a>
                 </div>
-
-            </div>
-
-            <div class="projetos-colunas">
-
-                <!-- Esquerda -->
-                <div class="projeto-item">
-                    <img src="img/mockup -transparente.png" alt="Projeto 1" class="projeto-img">
-                    <div class="descricao">
-                        <h3>King Burguer</h3>
-                        <div class="techs">
-                            <span>HTML</span><span>CSS</span><span>JS</span>
-                        </div>
-                        <p>Landing page de hamburgueria desenvolvida com</p>
-                        <a href="https://rafaellanads.github.io/KingBurguer/" target="_blank" class="btn-projeto">
-                            <img src="img/github.png" alt="GitHub">
-                            Projeto
-                        </a>
+                </div>
+        
+                <!-- CARD 4 -->
+                <div class="carousel-card" data-index="3">
+                <div class="carousel-card__img-wrap">
+                    <img src="img/mockup -transparente.png" alt="Projeto 4" class="carousel-card__img">
+                </div>
+                <div class="carousel-card__info">
+                    <h3 class="carousel-card__title">King Burguer</h3>
+                    <div class="techs carousel-card__techs">
+                    <span>HTML</span><span>CSS</span><span>JS</span>
                     </div>
+                    <p class="carousel-card__desc">Landing page de hamburgueria desenvolvida com foco em performance e acessibilidade</p>
+                    <a href="https://rafaellanads.github.io/KingBurguer/" target="_blank" class="btn-projeto">
+                    <img src="img/github.png" alt="GitHub"> Projeto
+                    </a>
                 </div>
-
-                <!-- Direita -->
-                <div class="projeto-item">
-                    <img src="img/mockup -transparente.png" alt="Projeto 2" class="projeto-img">
-                    <div class="descricao">
-                        <h3>Ecommerce</h3>
-                        <div class="techs">
-                            <span>React</span><span>Node</span><span>CSS</span>
-                        </div>
-                        <p>Loja virtual com listagem de produtos e carrinho
-                        <p>
-                            <a href="https://rafaellanads.github.io/KingBurguer/" target="_blank" class="btn-projeto">
-                                <img src="img/github.png" alt="GitHub">
-                                Projeto
-                            </a>
+                </div>
+        
+                <!-- CARD 5 -->
+                <div class="carousel-card" data-index="4">
+                <div class="carousel-card__img-wrap">
+                    <img src="img/mockup -transparente.png" alt="Projeto 5" class="carousel-card__img">
+                </div>
+                <div class="carousel-card__info">
+                    <h3 class="carousel-card__title">Ecommerce</h3>
+                    <div class="techs carousel-card__techs">
+                    <span>React</span><span>Node</span><span>CSS</span>
                     </div>
+                    <p class="carousel-card__desc">Loja virtual com listagem de produtos e carrinho de compras</p>
+                    <a href="https://rafaellanads.github.io/KingBurguer/" target="_blank" class="btn-projeto">
+                    <img src="img/github.png" alt="GitHub"> Projeto
+                    </a>
                 </div>
-
-            </div>
-
-        </div>
+                </div>
+        
+            </div><!-- /carousel-track -->
+        
+            <button class="carousel-arrow carousel-arrow--right" id="arrowRight" aria-label="Próximo projeto">
+                <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24"
+                fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+                <polyline points="9 18 15 12 9 6"></polyline>
+                </svg>
+            </button>
+        
+            </div><!-- /carousel-container -->
+        
+            <!-- DOTS -->
+            <div class="carousel-dots" id="carouselDots" role="tablist" aria-label="Navegação do carrossel"></div>
+        
+        </div><!-- /projetos-wrapper -->
     </section>
 
     <section id="sobre" class="competencias">
