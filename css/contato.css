@@ -11,7 +11,7 @@
     display: grid;
     grid-template-columns: 1fr 1.4fr;
     gap: 80px;
-    max-width: 1800px;
+    max-width: 1604px;
     margin: 0 auto;
     align-items: start;
   }
@@ -223,7 +223,7 @@
  
 @media (max-width: 768px) {
   #contato { 
-    padding: 60px 16px; /* reduz o padding lateral */
+    padding: 60px 40px; /* reduz o padding lateral */
     overflow-x: hidden; /* corta qualquer overflow */
   }
   .contato-inner { 
