@@ -25,9 +25,9 @@
     margin: 0;
   }
  
-  .cred-grid {
+.cred-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(min(360px, 100%), 1fr));
+  grid-template-columns: repeat(4, 1fr);
   gap: 20px;
   max-width: 1600px;
   margin: 0 auto;
@@ -152,4 +152,37 @@
 
 .mod-link:hover {
     opacity: 0.75;
+}
+
+/* Tablet (768px – 1024px): 2 colunas */
+@media (max-width: 1024px) {
+  .cred-grid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 16px;
+  }
+}
+
+/* Mobile (≤ 767px): 1 coluna */
+@media (max-width: 767px) {
+  .cred-grid {
+    grid-template-columns: 1fr;
+    gap: 12px;
+  }
+}
+
+/* Mobile pequeno (≤ 425px): 1 coluna + padding reduzido */
+@media (max-width: 425px) {
+  .cred-grid {
+    grid-template-columns: 1fr;
+    gap: 10px;
+    padding: 0 26px;
+  }
+
+  #credenciais {
+    padding: 30px 12px 50px;
+  }
+
+  .cred-card {
+    padding: 16px 12px;
+  }
 }
