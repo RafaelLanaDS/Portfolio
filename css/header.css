@@ -1,231 +1,225 @@
-﻿
-.navbar {
-  background-color: #0D0D0D;
-  border-bottom: 1px solid var(--border);
-  padding: 1rem 0;
-  z-index: 100000 !important; /* maior que o 9999 do .projetos */
-}
-
-.navbar-brand {
-  font-family: var(--font-brand);
-  font-weight: 600;
-  font-size: 1.1rem;
-  color: var(--text) !important;
-  letter-spacing: 0.02em;
-}
-
-.nav-link {
-  color: var(--muted) !important;
-  font-weight: 500;
-  font-size: 0.93rem;
-  padding: 0.4rem 0.9rem !important;
-  transition: color 0.2s;
-}
-
-.nav-link:hover {
-  color: var(--text) !important;
-}
-
-.nav-link.active {
-  color: #fff !important;
-  font-weight: 600;
-}
-.border-0{
-  background-color: var(--text) !important;
-}
-
-.hero {
-  min-height: calc(100vh - 65px);
-  display: flex;
-  align-items: center;
-  padding: 4rem 0 6rem;
-  position: relative;
-  overflow: hidden;
-  background: linear-gradient(
-    165deg,
-    rgba(13, 13, 13, 1)  54%,
-    rgba(43, 11, 74,  1)  89%,
-    rgba(34,  1, 66,  1)  99%
-  );
-}
-
-.hero::before {
-  content: '';
-  position: absolute;
-  top: -120px;
-  left: -100px;
-  width: 600px;
-  height: 600px;
-  pointer-events: none;
-  z-index: 0;
-}
-
-.hero > .container { position: relative; z-index: 1; }
-
-.hero-greeting {
-  color: var(--purple-lt);
-  font-size: 1.5rem;
-  font-weight: 500;
-  letter-spacing: 0.03em;
-  margin-bottom: 0.6rem;
-  opacity: 0;
-  animation: fadeUp 0.7s 0.1s forwards;
-}
-
-.hero-headline-row {
-  display: flex;
-  align-items: center;
-  gap: 1rem;
-  flex-wrap: wrap;
-  opacity: 0;
-  animation: fadeUp 0.7s 0.25s forwards;
-}
-
-.hero-title-white {
-  font-family: var(--font-main);
-  font-size: 8rem;
-  color: #fff;
-  font-weight: 800;
-  line-height: 1;
-  letter-spacing: 0.01em;
-}
-
-.hero-social-icons {
-  display: flex;
-  gap: 0.5rem;
-  align-items: center;
-}
-
-.social-icon-btn {
-  width: auto;
-  background: transparent;
-  border: none;
-  display: inline-flex;
-  align-items: center;
-  justify-content: center;
-  padding: 0;
-  text-decoration: none;
-  gap: 1.5rem;
-}
-
-.social-icon-btn img {
-  width: 55px;
-  height: 50px;
-  object-fit: contain;
-  display: block;
-}
-
-.social-icon-btn img:hover {
-  transform: translateY(-2px);
-}
-
-.hero-title-purple {
-  font-family: var(--font-main);
-  font-size: 10rem;
-  color: var(--purple-lt);
-  line-height: 0.95;
-  display: block;
-  font-weight: 900;
-  letter-spacing: 14px;
-  opacity: 0;
-  animation: fadeUp 0.7s 0.4s forwards;
-}
-
-.hero-desc {
-  max-width: 46rem;
-  color: var(--muted);
-  font-size: 1.5rem;
-  margin-top: 1.6rem;
-  font-weight: 600;
-  opacity: 0;
-  animation: fadeUp 0.7s 0.55s forwards;
-}
-
-@media (max-width: 576px) {
-  .hero-social-icons { margin-top: 0.6rem; }
-  .hero-headline-row { gap: 0.6rem; }
-}
-
-@media (max-width: 768px) {
-  .hero-title-white {
-    font-size: 4.5rem;
-    letter-spacing: 0px !important;
-  }
-  .hero-title-purple{
-    letter-spacing: 0px !important;
-    font-size: 7rem;
-  }
-  .hero-desc {
-    font-size: 1.088rem;
-    max-width: 33rem;
-  }
-
-}
-
-@media (max-width: 425px) and (min-width: 320px) {
-  .hero-greeting {
-    font-size: 18px;
-  }
-  .hero-title-white {
-    font-size: 2.3rem;
-  }
-  .hero-headline-row {
-    gap: 0.8rem;
-    flex-wrap: nowrap;
-  }
-  .hero-social-icons {
-    gap: 0.35rem;
-  }
-  .social-icon-btn {
-    width: auto;
-  }
-  .social-icon-btn img {
-    width: 20px;
-    height: 20px;
-  }
-  .hero-title-purple {
-    font-size: 4.5rem;
-  }
-
-  .hero-desc {
-    font-size: 15px;
-  }
-}
-
-@media (max-width: 375px) {
-  .hero-title-purple {
-    font-size: 4rem;
-  }
-  .hero-headline-row {
-    gap: 0.6rem;
-  }
-  .hero-social-icons {
-    gap: 0.3rem;
-  }
-  .social-icon-btn img {
-    width: 18px;
-    height: 18px;
-  }
-}
-
-@media (max-width: 320px) {
-  .hero-title-white {
-    font-size: 2rem;
-  }
-  .hero-title-purple {
-    font-size: 3.3rem;
-  }
-  .hero-headline-row {
-    gap: 0.5rem;
-  }
-  .hero-social-icons {
-    gap: 0.25rem;
-  }
-  .social-icon-btn img {
-    width: 16px;
-    height: 16px;
-  }
-  .hero-desc {
-        font-size: 11px;
+﻿ /* ── Variáveis originais do Rafael ── */
+    :root {
+      --font-main:   'Syne', sans-serif;
+      --font-brand:  'DM Sans', sans-serif;
+      --purple-lt:   #b36ef5;
+      --text:        #f0f0f0;
+      --muted:       #888;
+      --border:      rgba(255,255,255,0.08);
     }
-}
+ 
+    *, *::before, *::after { margin: 0; padding: 0; box-sizing: border-box; }
+    body { background: #0D0D0D; }
+ 
+    /* ── NAVBAR (original) ── */
+    .navbar {
+      background-color: #0D0D0D;
+      border-bottom: 1px solid var(--border);
+      padding: 1rem 0;
+      z-index: 100000 !important;
+    }
+    .navbar-brand {
+      font-family: var(--font-brand);
+      font-weight: 600;
+      font-size: 1.1rem;
+      color: var(--text) !important;
+      letter-spacing: 0.02em;
+    }
+    .nav-link {
+      color: var(--muted) !important;
+      font-weight: 500;
+      font-size: 0.93rem;
+      padding: 0.4rem 0.9rem !important;
+      transition: color 0.2s;
+    }
+    .nav-link:hover  { color: var(--text) !important; }
+    .nav-link.active { color: #fff !important; font-weight: 600; }
+ 
+    /* ── HERO (original — só removemos o background, o Vanta assume) ── */
+    .hero {
+      min-height: calc(100vh - 65px);
+      display: flex;
+      align-items: center;
+      padding: 4rem 0 6rem;
+      position: relative;
+      overflow: hidden;
+      /* background original removido — Vanta fica no #vanta-bg */
+    }
+ 
+    /* ── Div que o Vanta vai pintar ── */
+    #vanta-bg {
+      position: absolute;
+      inset: 0;
+      z-index: 0;
+    }
+ 
+    /*
+      Overlay que recria o gradiente diagonal original do Rafael
+      por cima da animação, preservando o tom roxo no canto inferior direito.
+      Ajuste a opacidade das paradas para calibrar quanto da rede aparece.
+    */
+    .hero-overlay {
+      position: absolute;
+      inset: 0;
+      z-index: 1;
+      background: linear-gradient(
+        165deg,
+        rgba(13, 13, 13, 0.82) 54%,
+        rgba(43, 11, 74,  0.70) 89%,
+        rgba(34,  1, 66,  0.75) 99%
+      );
+      pointer-events: none;
+    }
+ 
+    /* Bolha de luz original (::before) */
+    .hero::before {
+      content: '';
+      position: absolute;
+      top: -120px;
+      left: -100px;
+      width: 600px;
+      height: 600px;
+      pointer-events: none;
+      z-index: 2;
+    }
+ 
+    /* Conteúdo fica na frente de tudo */
+    .hero > .container { position: relative; z-index: 3; }
+ 
+    /* ── Tipografia + animações (original) ── */
+    @keyframes fadeUp {
+      from { opacity: 0; transform: translateY(22px); }
+      to   { opacity: 1; transform: translateY(0); }
+    }
+ 
+    .hero-greeting {
+      color: var(--purple-lt);
+      font-size: 1.5rem;
+      font-weight: 500;
+      letter-spacing: 0.03em;
+      margin-bottom: 0.6rem;
+      opacity: 0;
+      animation: fadeUp 0.7s 0.1s forwards;
+    }
+ 
+    .hero-headline-row {
+      display: flex;
+      align-items: center;
+      gap: 1rem;
+      flex-wrap: wrap;
+      opacity: 0;
+      animation: fadeUp 0.7s 0.25s forwards;
+    }
+ 
+    .hero-title-white {
+      font-family: var(--font-main);
+      font-size: 8rem;
+      color: #fff;
+      font-weight: 800;
+      line-height: 1;
+      letter-spacing: 0.01em;
+    }
+ 
+    .hero-social-icons {
+      display: flex;
+      gap: 0.5rem;
+      align-items: center;
+    }
+ 
+    .social-icon-btn {
+      width: auto;
+      background: transparent;
+      border: none;
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      padding: 0;
+      text-decoration: none;
+      gap: 1.5rem;
+    }
+ 
+    .social-icon-btn img {
+      width: 55px;
+      height: 50px;
+      object-fit: contain;
+      display: block;
+      transition: transform 0.2s;
+    }
+ 
+    .social-icon-btn img:hover { transform: translateY(-2px); }
+ 
+    .hero-title-purple {
+      font-family: var(--font-main);
+      font-size: 10rem;
+      color: var(--purple-lt);
+      line-height: 0.95;
+      display: block;
+      font-weight: 900;
+      letter-spacing: 14px;
+      opacity: 0;
+      animation: fadeUp 0.7s 0.4s forwards;
+    }
+ 
+    .hero-desc {
+      max-width: 46rem;
+      color: var(--muted);
+      font-size: 1.5rem;
+      margin-top: 1.6rem;
+      font-weight: 600;
+      opacity: 0;
+      animation: fadeUp 0.7s 0.55s forwards;
+    }
+ 
+    /* ── Responsivo (original) ── */
+    /* ── Tablet largo (1280px) ── */
+    @media (max-width: 1280px) {
+      .hero-title-white  { font-size: 6.5rem; }
+      .hero-title-purple { font-size: 8rem; letter-spacing: 8px; }
+      .hero-desc         { font-size: 1.3rem; }
+    }
+ 
+    /* ── Tablet (1024px) ── */
+    @media (max-width: 1024px) {
+      .hero-title-white  { font-size: 5rem; letter-spacing: 0; }
+      .hero-title-purple { font-size: 6.5rem; letter-spacing: 4px; }
+      .hero-desc         { font-size: 1.15rem; max-width: 36rem; }
+    }
+ 
+    @media (max-width: 576px) {
+      .hero-social-icons { margin-top: 0.6rem; }
+      .hero-headline-row { gap: 0.6rem; }
+    }
+ 
+    /* ── Mobile (768px) ── */
+    @media (max-width: 768px) {
+      .hero-title-white  { font-size: 3.8rem; letter-spacing: 0 !important; }
+      .hero-title-purple { letter-spacing: 0 !important; font-size: 5.5rem; }
+      .hero-desc         { font-size: 1.05rem; max-width: 33rem; }
+    }
+ 
+    @media (max-width: 425px) and (min-width: 320px) {
+      .hero-greeting     { font-size: 18px; }
+      .hero-title-white  { font-size: 2.3rem; }
+      .hero-headline-row { gap: 0.8rem; flex-wrap: nowrap; }
+      .hero-social-icons { gap: 0.35rem; }
+      .social-icon-btn   { width: auto; }
+      .social-icon-btn img { width: 20px; height: 20px; }
+      .hero-title-purple { font-size: 4.5rem; }
+      .hero-desc         { font-size: 15px; }
+    }
+ 
+    @media (max-width: 375px) {
+      .hero-title-purple { font-size: 4rem; }
+      .hero-headline-row { gap: 0.6rem; }
+      .hero-social-icons { gap: 0.3rem; }
+      .social-icon-btn img { width: 18px; height: 18px; }
+    }
+ 
+    @media (max-width: 320px) {
+      .hero-title-white  { font-size: 2rem; }
+      .hero-title-purple { font-size: 3.3rem; }
+      .hero-headline-row { gap: 0.5rem; }
+      .hero-social-icons { gap: 0.25rem; }
+      .social-icon-btn img { width: 16px; height: 16px; }
+      .hero-desc         { font-size: 11px; }
+    }
