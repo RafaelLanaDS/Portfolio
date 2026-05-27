@@ -1,17 +1,7 @@
-﻿    /* ── Variáveis originais do Rafael ── */
-    :root {
-      --font-main:   'Syne', sans-serif;
-      --font-brand:  'DM Sans', sans-serif;
-      --purple-lt:   #b36ef5;
-      --text:        #f0f0f0;
-      --muted:       #888;
-      --border:      rgba(255,255,255,0.08);
-    }
- 
-    *, *::before, *::after { margin: 0; padding: 0; box-sizing: border-box; }
-    body { background: #0D0D0D; }
- 
+﻿  
+  
     /* ── NAVBAR (original) ── */
+
     .navbar {
       background-color: #0D0D0D;
       border-bottom: 1px solid var(--border);
@@ -34,6 +24,10 @@
     }
     .nav-link:hover  { color: var(--text) !important; }
     .nav-link.active { color: #fff !important; font-weight: 600; }
+
+    .navbar-toggler{
+      background-color: #fff !important;
+    }
  
     /* ── HERO (original — só removemos o background, o Vanta assume) ── */
     .hero {
