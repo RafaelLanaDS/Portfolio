@@ -31,7 +31,7 @@
  
     /* ── HERO (original — só removemos o background, o Vanta assume) ── */
     .hero {
-      min-height: calc(100vh - 65px);
+       min-height: 100vh;
       display: flex;
       align-items: center;
       padding: 4rem 0 6rem;
