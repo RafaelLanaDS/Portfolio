@@ -1,4 +1,4 @@
-﻿ /* ── Variáveis originais do Rafael ── */
+﻿    /* ── Variáveis originais do Rafael ── */
     :root {
       --font-main:   'Syne', sans-serif;
       --font-brand:  'DM Sans', sans-serif;
@@ -113,7 +113,7 @@
  
     .hero-title-white {
       font-family: var(--font-main);
-      font-size: 8rem;
+      font-size: clamp(2.2rem, 6.5vw, 8rem);
       color: #fff;
       font-weight: 800;
       line-height: 1;
@@ -150,12 +150,12 @@
  
     .hero-title-purple {
       font-family: var(--font-main);
-      font-size: 10rem;
+      font-size: clamp(3rem, 8.5vw, 9rem);
       color: var(--purple-lt);
       line-height: 0.95;
       display: block;
       font-weight: 900;
-      letter-spacing: 14px;
+      letter-spacing: clamp(0px, 0.6vw, 10px);
       opacity: 0;
       animation: fadeUp 0.7s 0.4s forwards;
     }
@@ -163,63 +163,27 @@
     .hero-desc {
       max-width: 46rem;
       color: var(--muted);
-      font-size: 1.5rem;
+      font-size: clamp(0.95rem, 1.5vw, 1.5rem);
       margin-top: 1.6rem;
       font-weight: 600;
       opacity: 0;
       animation: fadeUp 0.7s 0.55s forwards;
     }
  
-    /* ── Responsivo (original) ── */
-    /* ── Tablet largo (1280px) ── */
-    @media (max-width: 1280px) {
-      .hero-title-white  { font-size: 6.5rem; }
-      .hero-title-purple { font-size: 8rem; letter-spacing: 8px; }
-      .hero-desc         { font-size: 1.3rem; }
-    }
- 
-    /* ── Tablet (1024px) ── */
-    @media (max-width: 1024px) {
-      .hero-title-white  { font-size: 5rem; letter-spacing: 0; }
-      .hero-title-purple { font-size: 6.5rem; letter-spacing: 4px; }
-      .hero-desc         { font-size: 1.15rem; max-width: 36rem; }
-    }
- 
+    /* ── Responsivo — tipografia fluida via clamp, só ajustes pontuais ── */
     @media (max-width: 576px) {
       .hero-social-icons { margin-top: 0.6rem; }
       .hero-headline-row { gap: 0.6rem; }
     }
  
-    /* ── Mobile (768px) ── */
-    @media (max-width: 768px) {
-      .hero-title-white  { font-size: 3.8rem; letter-spacing: 0 !important; }
-      .hero-title-purple { letter-spacing: 0 !important; font-size: 5.5rem; }
-      .hero-desc         { font-size: 1.05rem; max-width: 33rem; }
-    }
- 
-    @media (max-width: 425px) and (min-width: 320px) {
-      .hero-greeting     { font-size: 18px; }
-      .hero-title-white  { font-size: 2.3rem; }
-      .hero-headline-row { gap: 0.8rem; flex-wrap: nowrap; }
-      .hero-social-icons { gap: 0.35rem; }
-      .social-icon-btn   { width: auto; }
-      .social-icon-btn img { width: 20px; height: 20px; }
-      .hero-title-purple { font-size: 4.5rem; }
-      .hero-desc         { font-size: 15px; }
-    }
- 
-    @media (max-width: 375px) {
-      .hero-title-purple { font-size: 4rem; }
-      .hero-headline-row { gap: 0.6rem; }
+    @media (max-width: 425px) {
+      .hero-greeting     { font-size: 1rem; }
+      .hero-headline-row { gap: 0.5rem; flex-wrap: nowrap; }
       .hero-social-icons { gap: 0.3rem; }
-      .social-icon-btn img { width: 18px; height: 18px; }
+      .social-icon-btn img { width: 22px; height: 22px; }
     }
  
     @media (max-width: 320px) {
-      .hero-title-white  { font-size: 2rem; }
-      .hero-title-purple { font-size: 3.3rem; }
-      .hero-headline-row { gap: 0.5rem; }
-      .hero-social-icons { gap: 0.25rem; }
+      .hero-greeting     { font-size: 0.85rem; }
       .social-icon-btn img { width: 16px; height: 16px; }
-      .hero-desc         { font-size: 11px; }
     }
