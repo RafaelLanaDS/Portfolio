@@ -34,45 +34,45 @@
         </div>
     </nav>
     <!-- HERO — estrutura original do Rafael, Vanta adicionado dentro -->
-  <section id="home" class="hero">
+    <section id="home" class="hero">
  
-    <!-- 1. Canvas da animação Vanta (fundo) -->
-    <div id="vanta-bg"></div>
- 
-    <!-- 2. Overlay que preserva o gradiente diagonal original -->
-    <div class="hero-overlay"></div>
- 
-    <!-- 3. Conteúdo original intacto -->
-    <div class="container">
- 
-      <p class="hero-greeting">Olá, meu nome é Rafael Lana</p>
- 
-      <div class="hero-headline-row">
-        <span class="hero-title-white">Front-End</span>
- 
-        <!-- Social Icons -->
-        <div class="hero-social-icons">
-          <a href="https://github.com/rafaellanads" class="social-icon-btn" title="GitHub" target="_blank" rel="noreferrer">
-            <img src="img/github.png" alt="GitHub" class="social-icon">
-          </a>
-          <a href="https://www.linkedin.com/in/lanarafael/" class="social-icon-btn" title="LinkedIn" target="_blank" rel="noreferrer">
-            <img src="img/linkdlen.png" alt="LinkedIn" class="social-icon">
-          </a>
-          <a href="https://www.instagram.com/rafael.lanas/" class="social-icon-btn" title="Instagram" target="_blank" rel="noreferrer">
-            <img src="img/instagram.png" alt="Instagram" class="social-icon">
-          </a>
+        <!-- 1. Canvas da animação Vanta (fundo) -->
+        <div id="vanta-bg"></div>
+    
+        <!-- 2. Overlay que preserva o gradiente diagonal original -->
+        <div class="hero-overlay"></div>
+    
+        <!-- 3. Conteúdo original intacto -->
+        <div class="container">
+    
+            <p class="hero-greeting">Olá, meu nome é Rafael Lana</p>
+        
+            <div class="hero-headline-row">
+                <span class="hero-title-white">Front-End</span>
+        
+                <!-- Social Icons -->
+                <div class="hero-social-icons">
+                <a href="https://github.com/rafaellanads" class="social-icon-btn" title="GitHub" target="_blank" rel="noreferrer">
+                    <img src="img/github.png" alt="GitHub" class="social-icon">
+                </a>
+                <a href="https://www.linkedin.com/in/lanarafael/" class="social-icon-btn" title="LinkedIn" target="_blank" rel="noreferrer">
+                    <img src="img/linkdlen.png" alt="LinkedIn" class="social-icon">
+                </a>
+                <a href="https://www.instagram.com/rafael.lanas/" class="social-icon-btn" title="Instagram" target="_blank" rel="noreferrer">
+                    <img src="img/instagram.png" alt="Instagram" class="social-icon">
+                </a>
+                </div>
+            </div>
+        
+            <span class="hero-title-purple">Developer</span>
+        
+            <p class="hero-desc">
+                Desenvolvedor focado em criar experiências digitais memoráveis e
+                interfaces de alta performance que conectam marcas e pessoas.
+            </p>
+    
         </div>
-      </div>
- 
-      <span class="hero-title-purple">Developer</span>
- 
-      <p class="hero-desc">
-        Desenvolvedor focado em criar experiências digitais memoráveis e
-        interfaces de alta performance que conectam marcas e pessoas.
-      </p>
- 
-    </div>
-  </section>
+    </section>
     <section id="projetos" class="projetos">
         <img src="img/degrade-fundo-1.png" alt="" class="fundo-img">
         
@@ -456,34 +456,11 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r134/three.min.js"></script>
-  <script src="https://cdn.jsdelivr.net/npm/vanta@0.5.24/dist/vanta.net.min.js"></script>
-   <script>
-    VANTA.NET({
-      el: '#vanta-bg',          /* aplica no div interno, não na section */
-      THREE: THREE,
-      mouseControls: true,
-      touchControls: true,
-      gyroControls: false,
-      minHeight: 200,
-      minWidth: 200,
-      scale: 1.0,
-      scaleMobile: 1.0,
- 
-      /* ── Cores — ajuste aqui à vontade ── */
-      backgroundColor: 0x0d0d0d,   /* fundo escuro igual ao #0D0D0D do Rafael */
-      color: 0xb36ef5,             /* roxo claro igual ao --purple-lt */
- 
-      /* ── Densidade da rede ── */
-      points: 8.0,        /* quantidade de pontos  (↑ = mais denso) */
-      maxDistance: 20.0,  /* alcance das linhas    (↑ = mais linhas) */
-      spacing: 17.0,      /* espaçamento da grade  (↑ = mais espaçado) */
-      showDots: true
-    });
-  </script>
-
+    <script src="https://cdn.jsdelivr.net/npm/vanta@0.5.24/dist/vanta.net.min.js"></script>
     <script src="js/projetos.js"></script>
     <script src="js/nav.js"></script>
     <script src="js/contato.js"></script>
+    <script src="js/Vanta.js"></script>
 
 </body>
 
